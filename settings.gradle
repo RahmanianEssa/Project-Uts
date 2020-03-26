@@ -1,0 +1,2 @@
+rootProject.name='Project-Uts'
+include ':app'
