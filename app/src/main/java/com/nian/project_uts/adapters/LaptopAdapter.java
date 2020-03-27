@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.nian.project_uts.R;
 import com.nian.project_uts.model.Computer;
 import com.squareup.picasso.Picasso;
@@ -48,7 +49,7 @@ public class LaptopAdapter extends RecyclerView.Adapter<LaptopAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull LaptopAdapter.ViewHolder holder, int position) {
     Computer item = items.get(position);
-        Picasso.get().load(item.getGambar()).into(holder.gambarImage);
+        Glide.with(context).load(item.getGambar()).into(holder.gambarImage);
         holder.namaText.setText(item.getNama());
         holder.deskribText.setText(item.getDeskripsi());
         holder.hargaText.setText(item.getHarga());
