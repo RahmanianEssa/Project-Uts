@@ -9,13 +9,15 @@
 
     <ImageView
         android:id="@+id/Image_background"
-        android:layout_width="382dp"
-        android:layout_height="679dp"
+        android:layout_width="397dp"
+        android:layout_height="677dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485"
         app:srcCompat="@drawable/wow4"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/nama"
@@ -27,10 +29,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055"
+        app:layout_constraintVertical_bias="0.059"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -74,6 +76,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Printer"
         tools:ignore="MissingConstraints" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
