@@ -9,45 +9,45 @@
 
     <ImageView
         android:id="@+id/Image_background"
-        android:layout_width="397dp"
-        android:layout_height="677dp"
+        android:layout_width="399dp"
+        android:layout_height="700dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485"
-        app:srcCompat="@drawable/wow4"
+        app:srcCompat="@drawable/uwuw"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/nama"
-        android:layout_width="264dp"
-        android:layout_height="62dp"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
         android:text="WELCOME TO OUR STORE"
-        android:textColor="#2e9186"
-        android:textSize="19sp"
+        android:textColor="	#FA8072"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059"
+        app:layout_constraintVertical_bias="0.102"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_laptop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         android:background="#a3b0ff"
+        android:onClick="laptophandler"
         android:text="Laptop"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_Printer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="laptophandler"
         tools:ignore="MissingConstraints" />
 
     <Button
