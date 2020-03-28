@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.nian.project_uts.adapters.LaptopAdapter;
-import com.nian.project_uts.model.Computer;
+import com.nian.project_uts.models.Computer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +19,11 @@ public class LaptopActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laptop);
+
         RecyclerView laptopView = findViewById(R.id.rv_laptop);
 
         List<Computer> laptop = new ArrayList<>();
+
         laptop.add(new Computer(R.drawable.acer, "Acer"));
         laptop.add(new Computer(R.drawable.hp, "Hp"));
         laptop.add(new Computer(R.drawable.asus, "Asus"));

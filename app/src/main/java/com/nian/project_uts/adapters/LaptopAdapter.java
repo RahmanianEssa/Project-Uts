@@ -10,12 +10,14 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.nian.project_uts.models.Computer;
 import com.squareup.picasso.Picasso;
 
 import com.bumptech.glide.Glide;
 import com.nian.project_uts.LaptopActivity;
 import com.nian.project_uts.R;
-import com.nian.project_uts.model.Computer;
+
 
 
 import org.w3c.dom.Text;
