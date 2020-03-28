@@ -21,14 +21,12 @@ public class LaptopActivity extends AppCompatActivity {
         setContentView(R.layout.activity_laptop);
 
         RecyclerView laptopView = findViewById(R.id.rv_laptop);
-
         List<Computer> laptop = new ArrayList<>();
-
         laptop.add(new Computer(R.drawable.acer, "Acer"));
-        laptop.add(new Computer(R.drawable.hp, "Hp"));
         laptop.add(new Computer(R.drawable.asus, "Asus"));
-        laptop.add(new Computer(R.drawable.tosibah, "Toshiba"));
-        laptop.add(new Computer(R.drawable.dell, "Dell"));
+        laptop.add(new Computer(R.drawable.hp,"Hp"));
+        laptop.add(new Computer(R.drawable.dell,"Dell"));
+
 
         LaptopAdapter adapter = new LaptopAdapter(this,laptop);
         laptopView.setAdapter(adapter);

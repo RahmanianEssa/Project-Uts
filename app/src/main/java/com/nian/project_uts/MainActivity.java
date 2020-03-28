@@ -18,4 +18,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LaptopActivity.class);
         startActivity(intent);
     }
+
+    public void printerhandler(View view) {
+        Intent intent = new Intent(this, PrinterActivity.class);
+        startActivity(intent);
+    }
+
+    public void aksesorishandler(View view) {
+        Intent intent = new Intent(this, AksesoriesActivity.class);
+        startActivity(intent);
+    }
 }
