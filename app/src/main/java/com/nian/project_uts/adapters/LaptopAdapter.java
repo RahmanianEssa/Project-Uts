@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nian.project_uts.AcerActivity;
+import com.nian.project_uts.AsusActivity;
 import com.nian.project_uts.models.Computer;
 import com.squareup.picasso.Picasso;
 
@@ -54,6 +55,9 @@ public class LaptopAdapter extends RecyclerView.Adapter<LaptopAdapter.ViewHolder
             public void onClick(View v) {
                 if (items.get(position).getRowID().matches("1")){
                     Intent gotoactivity = new Intent(context, AcerActivity.class);
+                    context.startActivity(gotoactivity);
+                }else if(items.get(position).getRowID().matches("2")){
+                    Intent gotoactivity = new Intent(context, AsusActivity.class);
                     context.startActivity(gotoactivity);
                 }
             }

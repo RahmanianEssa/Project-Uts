@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="350dp"
     android:layout_margin="10dp"
     app:cardCornerRadius="20dp"
     app:cardElevation="4dp"
@@ -40,8 +40,8 @@
 
         <TextView
             android:id="@+id/detail"
-            android:layout_width="214dp"
-            android:layout_height="117dp"
+            android:layout_width="169dp"
+            android:layout_height="56dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:layout_marginTop="12dp"
