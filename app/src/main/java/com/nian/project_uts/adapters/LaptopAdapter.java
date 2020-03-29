@@ -1,6 +1,7 @@
 package com.nian.project_uts.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.nian.project_uts.AcerActivity;
 import com.nian.project_uts.models.Computer;
 import com.squareup.picasso.Picasso;
 
@@ -43,10 +45,19 @@ public class LaptopAdapter extends RecyclerView.Adapter<LaptopAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-    Computer item = items.get(position);
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    final Computer item = items.get(position);
         holder.namaText.setText(item.getNama());
         Picasso.get().load(item.getGambar()).into(holder.gambarImage);
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if (items.get(position).getRowID().matches("1")){
+                    Intent gotoactivity = new Intent(context, AcerActivity.class);
+                    context.startActivity(gotoactivity);
+                }
+            }
+        });
     }
 
 

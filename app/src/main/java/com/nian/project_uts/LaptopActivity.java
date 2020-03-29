@@ -22,7 +22,7 @@ public class LaptopActivity extends AppCompatActivity {
 
         RecyclerView laptopView = findViewById(R.id.rv_laptop);
         List<Computer> laptop = new ArrayList<>();
-        laptop.add(new Computer(R.drawable.acer, "Acer"));
+        laptop.add(new Computer(R.drawable.acer, "Acer","1"));
         laptop.add(new Computer(R.drawable.asus, "Asus"));
         laptop.add(new Computer(R.drawable.hp,"Hp"));
         laptop.add(new Computer(R.drawable.dell,"Dell"));

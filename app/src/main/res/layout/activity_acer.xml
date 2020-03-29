@@ -4,33 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AksesoriesActivity"
-    android:background="@drawable/yeay4">
+    tools:context=".AcerActivity"
+    android:background="@drawable/yeay2">
 
     <TextView
-        android:id="@+id/text_titleakse"
+        android:id="@+id/text_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:text="Category"
+        android:layout_marginEnd="16dp"
+        android:text="Acer"
         android:textAlignment="center"
-        android:textSize="29sp"
         android:textStyle="bold"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_aksesoris"
+        android:id="@+id/rv_acer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_titleakse"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintTop_toBottomOf="@+id/text_title"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
