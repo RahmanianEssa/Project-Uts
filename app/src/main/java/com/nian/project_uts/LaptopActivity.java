@@ -24,8 +24,8 @@ public class LaptopActivity extends AppCompatActivity {
         List<Computer> laptop = new ArrayList<>();
         laptop.add(new Computer(R.drawable.acer, "Acer","1"));
         laptop.add(new Computer(R.drawable.asus, "Asus","2"));
-        laptop.add(new Computer(R.drawable.hp,"Hp"));
-        laptop.add(new Computer(R.drawable.dell,"Dell"));
+        laptop.add(new Computer(R.drawable.hp,"Hp","3"));
+        laptop.add(new Computer(R.drawable.dell,"Dell","4"));
 
 
         LaptopAdapter adapter = new LaptopAdapter(this,laptop);
