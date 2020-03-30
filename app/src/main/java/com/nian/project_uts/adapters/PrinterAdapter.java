@@ -1,6 +1,7 @@
 package com.nian.project_uts.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.nian.project_uts.CanonActivity;
+import com.nian.project_uts.EpsonActivity;
+import com.nian.project_uts.PrintBrotherActivity;
+import com.nian.project_uts.PrintHpActivity;
 import com.nian.project_uts.R;
 import com.nian.project_uts.models.Computer;
 import com.squareup.picasso.Picasso;
@@ -34,10 +39,28 @@ public class PrinterAdapter extends RecyclerView.Adapter<PrinterAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Computer item = items.get(position);
         holder.namaTextprinter.setText(item.getNama());
         Picasso.get().load(item.getGambar()).into(holder.gambarImageprinter);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (items.get(position).getRowID().matches("1")){
+                    Intent gotoactivty = new Intent (context, PrintHpActivity.class);
+                    context.startActivity(gotoactivty);
+                }else if (items.get(position).getRowID().matches("2")){
+                    Intent gotoactivty = new Intent(context, PrintBrotherActivity.class);
+                    context.startActivity(gotoactivty);
+                }else if(items.get(position).getRowID().matches("3")){
+                    Intent gotoactivty = new Intent(context, CanonActivity.class);
+                    context.startActivity(gotoactivty);
+                }else if (items.get(position).getRowID().matches("4")){
+                    Intent gotoactivty = new Intent(context, EpsonActivity.class);
+                    context.startActivity(gotoactivty);
+                }
+            }
+        });
 
     }
 

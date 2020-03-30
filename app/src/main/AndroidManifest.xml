@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DellActivity"></activity>
+        <activity android:name=".EpsonActivity"></activity>
+        <activity android:name=".CanonActivity" />
+        <activity android:name=".PrintBrotherActivity" />
+        <activity android:name=".PrintHpActivity" />
+        <activity android:name=".DellActivity" />
         <activity android:name=".HpActivity" />
         <activity android:name=".AsusActivity" />
         <activity android:name=".AcerActivity" />

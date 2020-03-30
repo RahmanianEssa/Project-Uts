@@ -21,10 +21,10 @@ public class PrinterActivity extends AppCompatActivity {
         RecyclerView printerView = findViewById(R.id.rv_printer);
 
         List<Computer> printer = new ArrayList<>();
-        printer.add(new Computer(R.drawable.printerhp,"Hp"));
-        printer.add(new Computer(R.drawable.samsung,"Samsung"));
-        printer.add(new Computer(R.drawable.canon,"Canon"));
-        printer.add(new Computer(R.drawable.epson,"Epson"));
+        printer.add(new Computer(R.drawable.printerhp,"Hp","1"));
+        printer.add(new Computer(R.drawable.brother,"Brother","2"));
+        printer.add(new Computer(R.drawable.canon,"Canon","3"));
+        printer.add(new Computer(R.drawable.epson,"Epson","4"));
 
         PrinterAdapter adapter = new PrinterAdapter(this,printer);
         printerView.setAdapter(adapter);
