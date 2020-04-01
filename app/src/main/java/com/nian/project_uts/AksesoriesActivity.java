@@ -23,9 +23,9 @@ public class AksesoriesActivity extends AppCompatActivity {
 
         List<Computer> aksesoris = new ArrayList<>();
 
-        aksesoris.add(new Computer(R.drawable.fd,"Flashdisk"));
-        aksesoris.add(new Computer(R.drawable.mouse,"Mouse"));
-        aksesoris.add(new Computer(R.drawable.hdmi,"Hdmi"));
+        aksesoris.add(new Computer(R.drawable.fd,"Flashdisk","1"));
+        aksesoris.add(new Computer(R.drawable.mouse,"Mouse","2"));
+        aksesoris.add(new Computer(R.drawable.hdmi,"Hdmi","3"));
 
         AksesoriesAdapter adapter = new AksesoriesAdapter(this, aksesoris);
         aksesoriesView.setAdapter(adapter);
