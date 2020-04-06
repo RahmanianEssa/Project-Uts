@@ -30,6 +30,10 @@ public class AsusActivity extends AppCompatActivity {
         asus.add(new Produk(R.drawable.asus5, "Asus TUF FX504GD", "Cpu: Intel Core i7, Ram: 8Gb", "Rp. 13.737.000"));
         asus.add(new Produk(R.drawable.asus6, "Asus Transformer Book T101HA-GR013T", "Cpu: Intel Atom x5, Ram: 2Gb", "Rp. 4.290.000"));
         asus.add(new Produk(R.drawable.asus7, "Asus Zenbook Flip UX461UN", "Cpu: Intel Core i7, Ram: 16Gb", "Rp. 17.690.000"));
+        asus.add(new Produk(R.drawable.asus8,"ASUS VivoBook A407MA","Cpu: Core i3, Ram: 4Gb,8Gb","Rp 3.667.000"));
+        asus.add(new Produk(R.drawable.asus9,"ASUS VivoBook E12 E203MAH ","Cpu: Celeron Dual Core, Ram: 4Gb","Rp 3.099.000"));
+        asus.add(new Produk(R.drawable.aus10,"ASUS VivoBook Ultra A412","Cpu: Core i7, Ram:8Gb, SSD","Rp 5.199.000"));
+
 
         ProductLaptopAdapter adapter = new ProductLaptopAdapter(this, asus);
         asusView.setAdapter(adapter);
